@@ -1,0 +1,9 @@
+
+
+
+# skip following folders
+results/
+configs/
+data/
+
+.env/

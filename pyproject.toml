@@ -1,0 +1,32 @@
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statistical_arbitrage"
+version = "0.0.1"
+authors = [
+  { name="Ali", email="ali.nehrani@gmail.com" },
+]
+description = "A practice pair trading algorithms"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "git@github.com:anehrani/StatisticalArbitrage.git"
+"Bug Tracker" = "git@github.com:anehrani/StatisticalArbitrage.git/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+namespaces = false
+
+[tool.setuptools]
+package-dir = {"" = "src"}
